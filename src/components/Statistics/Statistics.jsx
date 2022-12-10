@@ -1,14 +1,25 @@
-export const Statistics = ({title, stats}) => {
-   return <section className="statistics">
-  <h2 className="title">{title}</h2>
+import css from './Statistics.module.css'
+import PropTypes from 'prop-types'; 
 
-  <ul className="stat-list">
+export const Statistics = ({ title, stats }) => {
+   return <section className={css.statistics}>
+  <h2 className={css.title}>{title}</h2>
+
+  <ul className={css.statList}>
            {stats.map(data => (
-    <li key={data.id} className="item">
+             <li key={data.id} className={css.item}>
         <span className="label">{data.label}</span>
-        <span className="percentage">{data.percentage}%</span>
+        <span className={css.percentage}>{data.percentage}%</span>
     </li>
     ))}
   </ul>
 </section>
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  // stats: PropTypes.oneOfType([
+  //   PropTypes.string.isRequired,
+  //   PropTypes.number.isRequired
+  // ])
 }

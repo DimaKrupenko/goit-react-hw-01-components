@@ -1,0 +1,17 @@
+.statistics {
+  margin-left: 50px;
+}
+
+.statList {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.percentage {
+  display: flex;
+}
+
+.item {
+  background-color: aqua;
+}

@@ -18,8 +18,6 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  // stats: PropTypes.oneOfType([
-  //   PropTypes.string.isRequired,
-  //   PropTypes.number.isRequired
-  // ])
+  label: PropTypes.string,
+ percentage: PropTypes.number
 }

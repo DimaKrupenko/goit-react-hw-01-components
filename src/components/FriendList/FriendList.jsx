@@ -5,7 +5,7 @@ export const FriendList = ({ friends }) => {
     return <ul className={css.friendList}>
      {friends.map(friend => (
          <li key={friend.id} className={css.item}>
-             <span {friend.isOnline = true ? className={css.online} : className={css.status}}>{friend.isOnline}</span>
+             <span className={friend.isOnline ? css.online : css.status}>{friend.isOnline}</span>
   <img className="avatar" src={friend.avatar} alt="User avatar" width="48" />
           <p className="name">{friend.name}</p>
 </li>
@@ -13,3 +13,8 @@ export const FriendList = ({ friends }) => {
 </ul>
 }
 
+
+FriendList.propTypes = {
+    isOnline: PropTypes.bool,
+    name: PropTypes.string
+}

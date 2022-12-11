@@ -1,5 +1,20 @@
+.type {
+  width: 100px;
+  border: 2px solid black;
+  padding: 0;
+}
+
 .transactionHistory {
-  /* display: flex;
-  width: 300px;
-  flex-wrap: wrap; */
+  text-align: center;
+  margin-left: 50px;
+}
+
+.amount {
+  border: 2px solid black;
+  padding: 0;
+}
+
+.currency {
+  border: 2px solid black;
+  padding: 0;
 }
